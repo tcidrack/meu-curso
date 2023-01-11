@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício de seletor e calculo css</title>
+    <style>
+        h1 {
+            background: yellow;
+            width: calc((100% / 3) - 10px);
+        }
+
+        section > p + h2 {
+            background: red;
+        }
+
+        p {
+            background: blue;
+            width: calc(33% - 10px);
+        }
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>primeiro h2</h2>
+    <section>
+        <h2>segundo h2</h2>
+        <p>parágrafo</p>
+        <h2>terceiro h2</h2>
+    </section>
+</body>
+</html>
